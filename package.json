@@ -1,0 +1,47 @@
+{
+  "name": "zomato-trial-backend",
+  "version": "0.0.1",
+  "description": "backend for zomato-trial-week",
+  "main": "./scripts/main.js",
+  "repository": "",
+  "author": "Shivam Arora <shivam.1996arora@gmail.com>",
+  "scripts": {
+    "build": "rimraf dist/ && babel ./ --out-dir dist/ --ignore ./node_modules,./.babelrc,./package.json,./npm-debug.log --copy-files",
+    "clean": "rm -rf dist",
+    "start": "nodemon --watch scripts --watch ../hoolime-core/dist --exec \"npm run start:once\"",
+    "start:once": "npm run build && node dist/scripts/main.js"
+  },
+  "dependencies": {
+    "@babel/core": "^7.4.3",
+    "aws-sdk": "^2.441.0",
+    "babel-polyfill": "^6.26.0",
+    "body-parser": "^1.18.3",
+    "cors": "^2.8.5",
+    "express": "^4.16.3",
+    "lodash": "^4.17.10",
+    "mongoose": "^5.5.3",
+    "uuid": "^3.3.2"
+  },
+  "devDependencies": {
+    "@ava/babel-preset-stage-4": "^1.1.0",
+    "@babel/preset-env": "^7.0.0-beta.49",
+    "babel-cli": "^6.26.0",
+    "babel-eslint": "^8.2.3",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-es2017": "^6.24.1",
+    "babel-preset-stage-1": "^6.24.1",
+    "babel-preset-stage-3": "^6.24.1",
+    "babel-register": "^6.26.0",
+    "eslint": "^4.19.1",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-plugin-import": "^2.10.0",
+    "eslint-plugin-json": "^1.2.0",
+    "eslint-plugin-jsx-a11y": "^6.0.3",
+    "eslint-plugin-react": "^7.7.0",
+    "nodemon": "^1.17.5",
+    "rimraf": "^2.6.2"
+  }
+}

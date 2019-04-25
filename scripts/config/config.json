@@ -1,0 +1,17 @@
+{
+  "development": {
+
+    "serverInfo": {
+      "port": 8001
+    },
+
+    "aws": {
+      "accessKeyId": "AKIA4PKW7FHBG7455WIJ",
+      "secretAccessKey": "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"
+    },
+
+    "S3": {
+      "bucketName": "zomato-trial-week"
+    }
+  }
+}
