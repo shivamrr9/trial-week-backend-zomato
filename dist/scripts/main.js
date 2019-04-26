@@ -38,7 +38,7 @@ console.log(global.config);
 
 var app = (0, _express2.default)();
 
-app.use(_bodyParser2.default.json());
+app.use(_bodyParser2.default.json({ limit: '10mb' }));
 
 app.use(_bodyParser2.default.urlencoded({ extended: false }));
 

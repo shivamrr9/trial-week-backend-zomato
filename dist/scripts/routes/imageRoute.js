@@ -38,7 +38,9 @@ router.post('/uploadImage', function (req, res, next) {
     });
   });
 
-  res.send({ message: 'success' });
+  res.send({
+    message: 'success'
+  });
 });
 
 router.post('/getImage', function (req, res, next) {
